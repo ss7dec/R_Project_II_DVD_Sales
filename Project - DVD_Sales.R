@@ -676,17 +676,6 @@ mape
 # In other words, they should be parallel and as close to each other as possible. 
 
 
-cvResults <- suppressWarnings(CVlm(df=test_data, form.lm=(test_data$sales ~ test_data$advertise+ test_data$plays+test_daata$attractiveness), m=5, 
-                                   dots=FALSE, seed=29, legend.pos="topleft",  
-                                   printit=FALSE, main="Small symbols are predicted
-                                   values while bigger ones are actuals."));  # performs the CV
-
-cvResults <- CVlm(df=sales_dataset, form.lm=sales ~ ., m=5, 
-                                   dots=FALSE, seed=29, legend.pos="topleft",  
-                                   printit=FALSE, main="Small symbols are predicted
-                                   values while bigger ones are actuals")  # performs the CV
-
-
 pd <- predict(train_data , training.data)
 
 mean((train_data - predict(dvdmod1))^2)
