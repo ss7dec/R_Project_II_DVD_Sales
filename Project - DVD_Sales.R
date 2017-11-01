@@ -34,10 +34,11 @@
 
 # A simple linear regression model that describes the relationship 
 # between two variables x and y can be expressed by the following equation. 
-# wherein the numbers ?? and ?? are called parameters, and ?? is the error term.
+# wherein the numbers α and β are called parameters, and ϵ is the error term.
 # as given below:-----------------
 
-y = ?? + ??x+ ??
+y = α + βx+ ϵ
+
 
 
 
@@ -676,7 +677,7 @@ mape
 # In other words, they should be parallel and as close to each other as possible. 
 
 
-pd <- predict(train_data , training.data)
+# pd <- predict(train_data , training.data)
 
 mean((train_data - predict(dvdmod1))^2)
 
